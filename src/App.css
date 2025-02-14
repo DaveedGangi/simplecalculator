@@ -1,0 +1,93 @@
+
+
+/* Center the calculator on the screen */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Style for the calculator container */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+/* Style for input field */
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: right;
+}
+
+/* Grid layout for buttons */
+button {
+  width: 22%;
+  padding: 15px;
+  margin: 5px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #d4d4d4;
+}
+
+/* Style for operator buttons */
+button[value="+"],
+button[value="-"],
+button[value="*"],
+button[value="/"] {
+  background-color: #ff9800;
+  color: white;
+}
+
+button[value="="] {
+  background-color: #4caf50;
+  color: white;
+}
+
+button[value="="]:hover,
+button[value="+"]:hover,
+button[value="-"]:hover,
+button[value="*"]:hover,
+button[value="/"]:hover {
+  background-color: #ff5722;
+}
+
+/* Clear button */
+button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  button {
+    width: 30%;
+  }
+}
